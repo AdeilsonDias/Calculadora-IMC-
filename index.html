@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>Calculadora Peso Corporal</title>
+</head>
+<body>
+
+   <main class="container_sections">
+        <section class="container_imc">
+                <div class="text_h1">
+                    <h1>Calculadora<span> - IMC</span></h1>
+                </div>
+
+                <div class="inputs_">
+
+                    <label for="altura">Altura :</label>
+                    <input type="number" name="Altura" id="altura" >
+
+                    <label for="Peso">Peso :</label>
+                    <input type="number" name="Peso" id="peso" >
+                </div>
+
+                <div class="button_edit">
+                    <input type="submit" value="Calcular" id="calcular" onclick=>
+                </div>
+
+                <div class="result" id="resultado"></div>
+        </section>   
+
+        <section class="img_edição">
+            <img src="undraw_personal_trainer_re_cnua.svg">
+        </section>
+
+    </main>
+        
+<script src="calculator.js"></script>
+    
+</body>
+</html>
