@@ -93,15 +93,7 @@
        margin-left: calc((100% - 350px)/2);
     }
 }
-@media screen and (max-width:442px) {
-    .container_sections{
-        transform: scale(60%);
-    }
-    .container_imc{
-        margin-left: 50px;
-    }
-    
-}
+
 
 
 
