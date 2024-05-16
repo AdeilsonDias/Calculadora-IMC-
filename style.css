@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
+    overflow: hidden;
 }
 
 .container_sections {
@@ -14,56 +15,67 @@
     align-items: center;
     height: 100vh;
     margin: 0 auto;
-    gap: 50px;
+ 
 }
+
 .img_edição img {
-    width: 500px;
-    height: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 .container_imc {
-   background-color: rgb(39, 39, 39);
-   border-radius: 18px;
+    background-color: rgb(39, 39, 39);
+    border-radius: 18px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
 }
+
 .text_h1 {
     color: white;
     font-size: 20px;
-  
 }
+
 .text_h1 span {
     color: rgb(0, 247, 0);
-    border-bottom: 1px solid rgb(0, 247, 0) ;
+    border-bottom: 1px solid rgb(0, 247, 0);
 }
-.inputs_{
+
+.inputs_ {
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px;
+    padding: 20px;
 }
+
 .inputs_ label {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(89, 243, 0);
+   
 }
-.inputs_ input {
+
+.inputs_ input{
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 10px;
     margin-bottom: 7px;
-   background-color: rgba(0, 0, 0, 0.356);
-   font-size: 15px;
-   color: white;
+    background-color: rgba(0, 0, 0, 0.356);
+    font-size: 15px;
+    color: white;  
 }
-
-.button_edit input{
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+.button_edit input {
     padding: 15px;
     border: none;
     width: 200px;
@@ -71,30 +83,26 @@
     background-color: rgb(0, 247, 0);
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-weight: 800px;
+    font-weight: 800;
     cursor: pointer;
 }
-.result{
+
+.result {
     margin-top: 30px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
-    
 }
-@media screen and (max-width:1024px)   {
-    .img_edição img{
+
+@media screen and (max-width: 1024px) {
+    .img_edição img {
         display: none;
     }
- 
-} 
-@media screen and (max-width:767px) {
-    .container_imc{
-       padding: 15px;
-       margin-left: calc((100% - 350px)/2);
-    }
 }
 
-
-
-
-
+@media screen and (max-width: 467px) {
+   
+    .container_imc {
+        transform: scale(90%);
+    }
+}
